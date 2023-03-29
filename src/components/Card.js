@@ -56,7 +56,7 @@ const Card = () => {
         <button className="submit">Generate QR Code</button>
 
         {qr && (
-          <a className="download" href={qr} target="_blank">
+          <a className="download" href={qr} target="_blank" rel="noreferrer">
             Click to download
           </a>
         )}
