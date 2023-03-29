@@ -1,13 +1,93 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: "Poppins", sans-serif;
+  background-color: #1c2028;
+  min-height: 100vh;
+}
+
+.form {
+  background-color: #2f3542;
+  color: #fff;
+  width: 500px;
+  text-align: center;
+  padding: 32px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.form-input {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: #fafafa;
+  background-color: #595d68;
+  border-radius: 8px;
+}
+
+img {
+  height: 300px;
+}
+
+.submit {
+  background-color: #57606f;
+  padding: 16px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: #fafafa;
+  width: 100%;
+  cursor: pointer;
+}
+
+.loading {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: green;
+  font-size: 20px;
+}
+
+.loading span {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #fff;
+  border-bottom: 0;
+  border-radius: 50%;
+  animation: _loading 1s linear infinite;
+}
+
+@keyframes _loading {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+.download {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.download:hover {
+  color: greenyellow;
 }
